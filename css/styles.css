@@ -1,15 +1,25 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #8f95a5;
+  --white-color: #ffffff;
+  --bgc-btn-dark: #263238;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+}
 body {
   font-family: "Poppins", sans-serif;
   background: #ffffff;
   color: #000000;
-  font-weight: 400;
 }
+
 .c-list {
   list-style: none;
   padding: 0;
   margin: 0;
 }
 .c-link {
+  color: inherit;
   text-decoration: none;
 }
 .header {
@@ -17,7 +27,7 @@ body {
 .header-logo {
   font-size: 36px;
   line-height: 1.5;
-  color: #000000;
+  color: var(--primary-color);
 }
 .accent {
   color: #939393;
@@ -29,12 +39,12 @@ body {
 .navigation-item {
 }
 .navigation-link {
-  font-weight: 500;
+  font-weight: var(--fw-medium);
   font-size: 20px;
   line-height: 1.5;
   /* identical to box height */
 
-  color: #263238;
+  color: var(--bgc-btn-dark);
 }
 .btn-navigation {
   font-size: 20px;
@@ -42,5 +52,59 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
 
-  color: #000000;
+  color: var(--primary-color);
+}
+/* Hero */
+.hero-title {
+  font-weight: var(--fw-semibold);
+  font-size: 64px;
+  line-height: 1.25;
+
+  color: var(--primary-color);
+}
+.hero-text {
+  font-size: 24px;
+  line-height: 1.5;
+
+  color: #8f95a5;
+}
+.hero-link {
+  font-size: 36px;
+  line-height: 1.5;
+
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--white-color);
+  background: var(--bgc-btn-dark);
+  border: 1px solid var(--primary-color);
+  border-radius: 10px;
+}
+
+/* Skills */
+
+.skills-title {
+  font-weight: var(--fw-semibold);
+  font-size: 48px;
+  line-height: 1.5;
+
+  color: var(--primary-color);
+}
+
+.skills-item-title {
+  font-weight: var(--fw-semibold);
+  font-size: 30px;
+  line-height: 1.5;
+}
+.skills-item-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
+.skills-item-link {
+  font-weight: var(--fw-medium);
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--white-color);
+  background: var(--bgc-btn-dark);
+  border-radius: 10px;
 }
