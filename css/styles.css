@@ -1,0 +1,46 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #ffffff;
+  color: #000000;
+  font-weight: 400;
+}
+.c-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.c-link {
+  text-decoration: none;
+}
+.header {
+}
+.header-logo {
+  font-size: 36px;
+  line-height: 1.5;
+  color: #000000;
+}
+.accent {
+  color: #939393;
+}
+.navigation {
+}
+.navigation-list {
+}
+.navigation-item {
+}
+.navigation-link {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.5;
+  /* identical to box height */
+
+  color: #263238;
+}
+.btn-navigation {
+  font-size: 20px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #000000;
+}
