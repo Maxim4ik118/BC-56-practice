@@ -9,10 +9,23 @@
   
 }
 
+
+
 body {
   font-family: "Poppins", sans-serif;
   background: #ffffff;
   color: #000000;
+}
+
+.mb-60{
+  margin-bottom: 60px;
+}
+
+.container{
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 1380px;
+  margin: 0 auto;
 }
 
 .c-list {
@@ -26,7 +39,10 @@ body {
   text-decoration: none;
 }
 
-.header {}
+.header {
+padding-top: 55px;
+padding-bottom: 55px;
+}
 
 .logo {
 font-size: 36px;
@@ -41,9 +57,13 @@ color: var(--primary-color);
   color: #939393;
 }
 
-.navigation {}
+/* .navigation {
+  display: flex;
+}
 
-.navigation-list {}
+.navigation-list {
+  display: flex;
+} */
 
 .navigation-item {}
 
@@ -66,12 +86,18 @@ color: var(--primary-color);
 }
 
 /* Hero */
+.hero{
+  padding-top: 46px;
+  padding-bottom: 67px;
+}
 .hero-title {
   font-weight: var(--fw-semibold);
   font-size: 64px;
   line-height: 1.25;
 
   color: var(--primary-color);
+  margin-bottom: 40px;
+
 }
 
 .hero-text {
@@ -79,6 +105,7 @@ color: var(--primary-color);
   line-height: 1.5;
 
   color: var(--secondary-color);
+  margin-bottom: 60px;
 }
 
 .hero-link {
@@ -95,13 +122,17 @@ color: var(--primary-color);
 }
 
 /* Skills */
-
+.skills{
+  padding-top: 67px;
+  padding-bottom: 89px;
+}
 .skills-title {
   font-weight: var(--fw-semibold);
   font-size: 48px;
   line-height: 1.5;
 
   color: var(--primary-color);
+  
 }
 
 .skills-item-title {
@@ -123,6 +154,7 @@ color: var(--primary-color);
   background: var(--bgc-btn-dark);
   border-radius: 10px;
 }
+
 
 /*--------ABOUT------*/
 

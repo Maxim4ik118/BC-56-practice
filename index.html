@@ -9,12 +9,14 @@
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
 
 <body>
   <header class="header">
-    <a href="index.html" class="header-logo logo c-link">Brit<span class="accent">lex</span></a>
+    <div class="container">
+      <a href="index.html" class="header-logo logo c-link">Brit<span class="accent">lex</span></a>
     <nav class="navigation">
       <ul class="navigation-list c-list">
         <li class="navigation-item">
@@ -35,19 +37,25 @@
       </ul>
     </nav>
     <button type="button" class="btn-navigation">Let’s Talk</button>
+    </div>
+    
   </header>
   <main>
     <section class="hero">
-      <h1 class="hero-title title">Learn Any Foreign Language</h1>
+      <div class="container">
+        <h1 class="hero-title title mb-60">Learn Any Foreign Language</h1>
       <p class="hero-text text">
         With our teachers who write a program for each student, you will be
         able to make your first sketch after the first lesson.
       </p>
       <a href="#" class="hero-link c-link">Get started</a>
       <img src="./image/learning-languages.png" alt="Learn Any Foreign Language" width="654" class="hero-img" />
+      </div>
+      
     </section>
     <section class="skills">
-      <h2 class="skills-title title">Skills</h2>
+      <div class="container">
+        <h2 class="skills-title title mb-60">Skills</h2>
       <ul class="skills-list c-list">
         <li class="skills-item">
           <img src="./image/Shared-goals-bro-1.png" alt="Speaking" width="390" class="skills-img" />
@@ -89,9 +97,10 @@
           <a href="#" class="skills-item-link c-link">Learn more</a>
         </li>
       </ul>
+      </div>
     </section>
     <section class="about">
-      <h2 class="about-title">About us</h2>
+      <h2 class="about-title mb-60">About us</h2>
       <p class="about-text">
         The model offers a framework for discussing problems related to the
         user's experience, as well as possible ways and means of solving them.
@@ -119,7 +128,7 @@
     </section>
 
     <section class="pricing">
-      <h2 class="pricing-title">Pricing</h2>
+      <h2 class="pricing-title mb-60">Pricing</h2>
       <ul class="pricing-list c-list">
         <li class="pricing-item">
           <img class="pricing-item-img" src="./image/online.png" alt="online" width="280" />
@@ -151,7 +160,7 @@
     </section>
     <section class="contact">
       <img class="contact-img" src="./image/contact.png" alt="contact" width="425" height="430" />
-      <h2 class="contact-title">Contact Us</h2>
+      <h2 class="contact-title mb-60">Contact Us</h2>
       <p class="contact-text">
         Discover your current English level by taking our free online English
         test. Sign up to our newsletter for learning tips and free resources
