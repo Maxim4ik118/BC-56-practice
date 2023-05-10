@@ -6,6 +6,7 @@
   --fw-regular: 400;
   --fw-medium: 500;
   --fw-semibold: 600;
+  
 }
 
 body {
@@ -27,10 +28,13 @@ body {
 
 .header {}
 
+.logo {
+font-size: 36px;
+line-height: 1.5;
+color: var(--primary-color);
+}
+
 .header-logo {
-  font-size: 36px;
-  line-height: 1.5;
-  color: var(--primary-color);
 }
 
 .accent {
@@ -153,4 +157,84 @@ body {
   font-size: 20px;
   line-height: 1.5;
   color: var(--secondary-color);
+}
+
+.pricing {
+}
+.pricing-title {
+font-weight: var(--fw-semibold);
+font-size: 48px;
+line-height: 1.5;
+color: #263238;
+}
+.pricing-list {
+}
+
+.pricing-item {
+}
+.pricing-item-img {
+}
+.pricing-item-title {
+font-weight: var(--fw-semibold);
+font-size: 30px;
+line-height: 1.6;
+color: var(--bgc-btn-dark);
+}
+
+.pricing-item-text,
+.pricing-item-amount,
+.pricing-item-period {
+  line-height: 1.5;
+}
+
+.pricing-item-text {
+font-size: 20px;
+color: var(--secondary-color);
+
+}
+.pricing-item-payment {
+  background-color: #EEEEEE;
+}
+.pricing-item-amount {
+font-size: 24px;
+color: var(--bgc-btn-dark);
+}
+.pricing-item-period {
+font-size: 18px;
+color: #546269;
+}
+
+.contact {
+}
+.contact-img {
+}
+.contact-title,
+.contact-text {
+line-height: 1.5;
+}
+
+.contact-title {
+font-weight: var(--fw-semibold);
+font-size: 48px;
+color: #000000;
+}
+
+.contact-text {
+font-size: 20px;
+color: var(--secondary-color);
+}
+
+.footer {
+}
+.footer-logo {
+}
+.navigation-list {
+}
+.footer-navigation .navigation-link {
+  color: var(--secondary-color);
+}
+
+.navigation-item {
+}
+.navigation-link {
 }
