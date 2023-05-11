@@ -1,180 +1,257 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Britlex</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Britlex</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="./css/styles.css" />
-</head>
-
-<body>
-  <header class="header">
-    <div class="container">
-      <a href="index.html" class="header-logo logo c-link">Brit<span class="accent">lex</span></a>
-    <nav class="navigation">
-      <ul class="navigation-list c-list">
-        <li class="navigation-item">
-          <a href="index.html" class="navigation-link c-link">Home</a>
-        </li>
-        <li class="navigation-item">
-          <a href="#" class="navigation-link c-link">Skills</a>
-        </li>
-        <li class="navigation-item">
-          <a href="#" class="navigation-link c-link">About Us</a>
-        </li>
-        <li class="navigation-item">
-          <a href="#" class="navigation-link c-link">Pricing</a>
-        </li>
-        <li class="navigation-item">
-          <a href="#" class="navigation-link c-link">Contacts</a>
-        </li>
-      </ul>
-    </nav>
-    <button type="button" class="btn-navigation">Let’s Talk</button>
-    </div>
-    
-  </header>
-  <main>
-    <section class="hero">
-      <div class="container">
-        <h1 class="hero-title title mb-60">Learn Any Foreign Language</h1>
-      <p class="hero-text text">
-        With our teachers who write a program for each student, you will be
-        able to make your first sketch after the first lesson.
-      </p>
-      <a href="#" class="hero-link c-link">Get started</a>
-      <img src="./image/learning-languages.png" alt="Learn Any Foreign Language" width="654" class="hero-img" />
+  <body>
+    <header class="header">
+      <div class="container header-container">
+        <a href="index.html" class="header-logo logo c-link"
+          >Brit<span class="accent">lex</span></a
+        >
+        <nav class="navigation">
+          <ul class="navigation-list c-list">
+            <li class="navigation-item">
+              <a href="index.html" class="navigation-link c-link">Home</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link c-link">Skills</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link c-link">About Us</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link c-link">Pricing</a>
+            </li>
+            <li class="navigation-item">
+              <a href="#" class="navigation-link c-link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <button type="button" class="btn-navigation">Let’s Talk</button>
       </div>
-      
-    </section>
-    <section class="skills">
-      <div class="container">
-        <h2 class="skills-title title mb-60">Skills</h2>
-      <ul class="skills-list c-list">
-        <li class="skills-item">
-          <img src="./image/Shared-goals-bro-1.png" alt="Speaking" width="390" class="skills-img" />
-          <h3 class="skills-item-title">Speaking</h3>
-          <p class="skills-item-text text">
-            Improve your English skills and confidence. Live classes and
-            interactive lessons online. 20% extra free for a limited time only
-            Learn English online and improve your skills through our
-            high-quality courses and resources – all designed for adult
-            language learners.
-          </p>
-          <a href="#" class="skills-item-link c-link">Learn more</a>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="container">
+          <div class="hero-block-left">
+            <h1 class="hero-title title mb-60">Learn Any Foreign Language</h1>
+            <p class="hero-text text">
+              With our teachers who write a program for each student, you will
+              be able to make your first sketch after the first lesson.
+            </p>
+            <a href="#" class="hero-link c-link">Get started</a>
+          </div>
+
+          <div class="hero-block-right">
+            <img
+              src="./image/learning-languages.png"
+              alt="Learn Any Foreign Language"
+              width="654"
+              class="hero-img"
+            />
+          </div>
+        </div>
+      </section>
+      <section class="skills">
+        <div class="container">
+          <h2 class="skills-title title mb-60">Skills</h2>
+          <ul class="skills-list c-list">
+            <li class="skills-item">
+              <img
+                src="./image/Shared-goals-bro-1.png"
+                alt="Speaking"
+                width="390"
+                class="skills-img"
+              />
+              <h3 class="skills-item-title">Speaking</h3>
+              <p class="skills-item-text text">
+                Improve your English skills and confidence. Live classes and
+                interactive lessons online. 20% extra free for a limited time
+                only Learn English online and improve your skills through our
+                high-quality courses and resources – all designed for adult
+                language learners.
+              </p>
+              <a href="#" class="skills-item-link c-link">Learn more</a>
+            </li>
+            <li>
+              <img
+                src="./image/Typewriter-bro-1.png"
+                alt="Writing"
+                width="390"
+              />
+              <h3 class="skills-item-title">Writing</h3>
+              <p class="skills-item-text text">
+                One of the most important and extensive areas of natural
+                science, the science that studies substances, also their
+                composition
+              </p>
+              <a href="#" class="skills-item-link c-link">Learn more</a>
+            </li>
+            <li>
+              <img
+                src="./image/House-bookshelves-bro-1.png"
+                alt="Reading"
+                width="390"
+              />
+              <h3 class="skills-item-title">Reading</h3>
+              <p class="skills-item-text text">
+                Perception and response actions of the user resulting from the
+                use and/or upcoming use of the product, system or service
+              </p>
+              <a href="#" class="skills-item-link c-link">Learn more</a>
+            </li>
+            <li>
+              <img
+                src="./image/Podcast-audience-bro-1.png"
+                alt="Listening"
+                width="408"
+              />
+              <h3 class="skills-item-title">Listening</h3>
+              <p class="skills-item-text text">
+                Here you can find activities to practise your listening skills.
+                Listening will help you to improve your understanding
+              </p>
+              <a href="#" class="skills-item-link c-link">Learn more</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="about">
+        <h2 class="about-title mb-60">About us</h2>
+        <p class="about-text">
+          The model offers a framework for discussing problems related to the
+          user's experience, as well as possible ways and means of solving them.
+          Application development begins at the top level (strategy), where the
+          future software product is described quite abstractly from the point
+          of view of the expectations of both users and the customer.
+        </p>
+        <ul class="about-list c-list">
+          <li class="about-list-item">
+            <b class="about-list-item-title">800</b>
+            <p class="about-list-item-text">Pupils</p>
+          </li>
+
+          <li class="about-list-item">
+            <b class="about-list-item-title">18</b>
+            <p class="about-list-item-text">Teachers</p>
+          </li>
+
+          <li class="about-list-item">
+            <b class="about-list-item-title">6</b>
+            <p class="about-list-item-text">Foreign languages</p>
+          </li>
+        </ul>
+        <img
+          src="./image/Business-competition-bro-1.jpg"
+          alt="Business"
+          width="540"
+        />
+      </section>
+
+      <section class="pricing">
+        <h2 class="pricing-title mb-60">Pricing</h2>
+        <ul class="pricing-list c-list">
+          <li class="pricing-item">
+            <img
+              class="pricing-item-img"
+              src="./image/online.png"
+              alt="online"
+              width="280"
+            />
+            <h3 class="pricing-item-title">Self-study online course</h3>
+            <p class="pricing-item-text">
+              Start learning English online in live classes with qualified EC
+              teachers and students from all over the world.
+            </p>
+            <div class="pricing-item-payment">
+              <span class="pricing-item-amount"> £5.99</span
+              ><span class="pricing-item-period"> per month</span>
+            </div>
+          </li>
+          <li class="pricing-item">
+            <img
+              class="pricing-item-img"
+              src="./image/lesson.png"
+              alt="lesson"
+              width="390"
+            />
+            <h3 class="pricing-item-title">Live online classes</h3>
+            <p class="pricing-item-text">
+              Interactive group classes with expert teachers. Free 7-day trial
+            </p>
+            <div class="pricing-item-payment">
+              <span class="pricing-item-amount">£12.99</span
+              ><span class="pricing-item-period">per month</span>
+            </div>
+          </li>
+          <li class="pricing-item">
+            <img
+              class="pricing-item-img"
+              src="./image/webinar.png"
+              alt="webinar"
+              width="315"
+            />
+            <h3 class="pricing-item-title">Personal Tuition</h3>
+            <p class="pricing-item-text">
+              Online one-to-one English tutoring – enjoy our first session for
+              only $1
+            </p>
+            <div class="pricing-item-payment">
+              <span class="pricing-item-amount">£12.99</span
+              ><span class="pricing-item-period"> per month</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <section class="contact">
+        <img
+          class="contact-img"
+          src="./image/contact.png"
+          alt="contact"
+          width="425"
+          height="430"
+        />
+        <h2 class="contact-title mb-60">Contact Us</h2>
+        <p class="contact-text">
+          Discover your current English level by taking our free online English
+          test. Sign up to our newsletter for learning tips and free resources
+        </p>
+      </section>
+    </main>
+    <footer class="footer">
+      <a class="logo footer-logo c-link" href="index.html"
+        >Brit<span class="accent">lex</span></a
+      >
+      <ul class="navigation-list footer-navigation c-list">
+        <li class="navigation-item">
+          <a class="navigation-link c-link" href="./">Terms and Conditions</a>
         </li>
-        <li>
-          <img src="./image/Typewriter-bro-1.png" alt="Writing" width="390" />
-          <h3 class="skills-item-title">Writing</h3>
-          <p class="skills-item-text text">
-            One of the most important and extensive areas of natural science,
-            the science that studies substances, also their composition
-          </p>
-          <a href="#" class="skills-item-link c-link">Learn more</a>
+        <li class="navigation-item">
+          <a class="navigation-link c-link" href="./">Privacy Policy</a>
         </li>
-        <li>
-          <img src="./image/House-bookshelves-bro-1.png" alt="Reading" width="390" />
-          <h3 class="skills-item-title">Reading</h3>
-          <p class="skills-item-text text">
-            Perception and response actions of the user resulting from the use
-            and/or upcoming use of the product, system or service
-          </p>
-          <a href="#" class="skills-item-link c-link">Learn more</a>
-        </li>
-        <li>
-          <img src="./image/Podcast-audience-bro-1.png" alt="Listening" width="408" />
-          <h3 class="skills-item-title">Listening</h3>
-          <p class="skills-item-text text">
-            Here you can find activities to practise your listening skills.
-            Listening will help you to improve your understanding
-          </p>
-          <a href="#" class="skills-item-link c-link">Learn more</a>
+        <li class="navigation-item">
+          <a class="navigation-link c-link" href="./">Cookie Policy</a>
         </li>
       </ul>
-      </div>
-    </section>
-    <section class="about">
-      <h2 class="about-title mb-60">About us</h2>
-      <p class="about-text">
-        The model offers a framework for discussing problems related to the
-        user's experience, as well as possible ways and means of solving them.
-        Application development begins at the top level (strategy), where the
-        future software product is described quite abstractly from the point
-        of view of the expectations of both users and the customer.
-      </p>
-      <ul class="about-list c-list">
-        <li class="about-list-item">
-          <b class="about-list-item-title">800</b>
-          <p class="about-list-item-text">Pupils</p>
-        </li>
-
-        <li class="about-list-item">
-          <b class="about-list-item-title">18</b>
-          <p class="about-list-item-text">Teachers</p>
-        </li>
-
-        <li class="about-list-item">
-          <b class="about-list-item-title">6</b>
-          <p class="about-list-item-text">Foreign languages</p>
-        </li>
-      </ul>
-      <img src="./image/Business-competition-bro-1.jpg" alt="Business" width="540" />
-    </section>
-
-    <section class="pricing">
-      <h2 class="pricing-title mb-60">Pricing</h2>
-      <ul class="pricing-list c-list">
-        <li class="pricing-item">
-          <img class="pricing-item-img" src="./image/online.png" alt="online" width="280" />
-          <h3 class="pricing-item-title">Self-study online course</h3>
-          <p class="pricing-item-text">
-            Start learning English online in live classes with qualified EC
-            teachers and students from all over the world.
-          </p>
-          <div class="pricing-item-payment"><span class="pricing-item-amount"> £5.99</span><span class="pricing-item-period"> per month</span></div>
-        </li>
-        <li class="pricing-item">
-          <img class="pricing-item-img" src="./image/lesson.png" alt="lesson" width="390" />
-          <h3 class="pricing-item-title">Live online classes</h3>
-          <p class="pricing-item-text">
-            Interactive group classes with expert teachers. Free 7-day trial
-          </p>
-          <div class="pricing-item-payment"><span class="pricing-item-amount">£12.99</span><span class="pricing-item-period">per month</span></div>
-        </li>
-        <li class="pricing-item">
-          <img class="pricing-item-img" src="./image/webinar.png" alt="webinar" width="315" />
-          <h3 class="pricing-item-title">Personal Tuition</h3>
-          <p class="pricing-item-text">
-            Online one-to-one English tutoring – enjoy our first session for
-            only $1
-          </p>
-          <div class="pricing-item-payment"><span class="pricing-item-amount">£12.99</span><span class="pricing-item-period"> per month</span></div>
-        </li>
-      </ul>
-    </section>
-    <section class="contact">
-      <img class="contact-img" src="./image/contact.png" alt="contact" width="425" height="430" />
-      <h2 class="contact-title mb-60">Contact Us</h2>
-      <p class="contact-text">
-        Discover your current English level by taking our free online English
-        test. Sign up to our newsletter for learning tips and free resources
-      </p>
-    </section>
-  </main>
-  <footer class="footer">
-    <a class="logo footer-logo c-link"  href="index.html">Brit<span class="accent">lex</span></a>
-    <ul class="navigation-list footer-navigation c-list">
-      <li class="navigation-item"><a class="navigation-link c-link" href="./">Terms and Conditions</a></li>
-      <li class="navigation-item"><a class="navigation-link c-link" href="./">Privacy Policy</a></li>
-      <li class="navigation-item"><a class="navigation-link c-link" href="./">Cookie Policy</a></li>
-    </ul>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>
