@@ -140,10 +140,12 @@ img {
 .hero-link {
   font-size: 36px;
   line-height: 1.5;
-
+  padding: 23px 64px;
   text-align: center;
   letter-spacing: 0.03em;
-
+  display: flex;
+  justify-content: center;
+  max-width: 426px;
   color: var(--white-color);
   background: var(--bgc-btn-dark);
   border: 1px solid var(--primary-color);
@@ -159,10 +161,22 @@ img {
   font-weight: var(--fw-semibold);
   font-size: 48px;
   line-height: 1.5;
+  text-align: center;
 
   color: var(--primary-color);
 }
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+}
 
+.skills-item {
+  width: calc((100% - 60px) / 3);
+  background-color: #f5f5f5;
+  border-radius: 10px;
+  padding: 32px 18px;
+}
 .skills-item-title {
   font-weight: var(--fw-semibold);
   font-size: 30px;
@@ -185,6 +199,8 @@ img {
   color: var(--white-color);
   background: var(--bgc-btn-dark);
   border-radius: 10px;
+  display: inline-block;
+  padding: 15px 57px;
 }
 
 /*--------ABOUT------*/
