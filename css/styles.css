@@ -206,6 +206,19 @@ img {
 /*--------ABOUT------*/
 
 .about {
+  padding-bottom: 90px;
+}
+
+.about > .container {
+  display: flex;
+}
+
+.about-content-container {
+  max-width: 652px;
+}
+
+.about-img-container {
+  margin-left: auto;
 }
 
 .about-title {
@@ -227,6 +240,8 @@ img {
 }
 
 .about-list {
+  display: flex;
+  justify-content: space-around;
 }
 
 .about-list-item {
@@ -244,6 +259,7 @@ img {
 }
 
 .about-list-item-text {
+  max-width: 113px;
   font-size: 20px;
   line-height: 1.5;
   color: var(--secondary-color);
@@ -252,21 +268,26 @@ img {
 }
 
 .pricing {
+  padding-top: 90px;
 }
 .pricing-title {
   font-weight: var(--fw-semibold);
   font-size: 48px;
   line-height: 1.5;
   color: #263238;
-
+  text-align: center;
   margin-top: 0;
 }
 .pricing-list {
+  display: flex;
+  gap: 30px;
 }
 
 .pricing-item {
+  width: calc((100% - 60px) / 3);
 }
 .pricing-item-img {
+  width: 100%;
 }
 .pricing-item-title {
   font-weight: var(--fw-semibold);
@@ -293,6 +314,11 @@ img {
 }
 .pricing-item-payment {
   background-color: #eeeeee;
+  padding: 5px 23px;
+  display: inline-flex;
+  gap: 28px;
+  border-radius: 5px;
+  align-items: baseline;
 }
 .pricing-item-amount {
   font-size: 24px;
