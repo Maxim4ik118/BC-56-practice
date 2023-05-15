@@ -1,0 +1,55 @@
+:root {
+  --primary-color: #8d96bd;
+  --secondary-color: #3d4f9f;
+  --accent-color: #5e81fe;
+  --blue-color: #4d6ce1;
+  --grey-color-100: #d6dae5;
+  --grey-color-200: #adb4d2;
+  --white-color-100: #f1f5ff;
+  --white-color-200: #f5f8ff;
+  --white-color: #ffffff;
+  --fw-ligth: 300;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+  --open-sans: "Open Sans", sans-serif;
+  --quicksand: "Quicksand", sans-serif;
+  --roboto: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+pre {
+  margin: 0;
+}
+
+img {
+  display: block;
+}
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+button {
+  font-family: inherit;
+}
+body {
+  font-family: var(--roboto);
+  margin: 0;
+}
+.container {
+  width: 1240px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
