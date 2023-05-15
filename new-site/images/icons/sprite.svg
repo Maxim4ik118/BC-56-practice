@@ -33,6 +33,18 @@
 <symbol id="icon-play" viewBox="0 0 7 8">
 <path d="M6 2.73354C6.66667 3.11844 6.66667 4.08069 6 4.46559L1.5 7.06367C0.833333 7.44857 0 6.96744 0 6.19764V1.00149C0 0.231691 0.833333 -0.249434 1.5 0.135467L6 2.73354Z" />
 </symbol>
+<symbol id="icon-about-4" viewBox="0 0 35 32">
+<path fill="none" stroke="#4074f8" style="stroke: var(--color1, #4074f8)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4.2105" d="M3.368 20.156v9.318h29.060v-9.318M11.376 8.421l6.737-5.053M24.85 8.421l-6.737-5.053M18.113 3.368v17.684"></path>
+</symbol>
+<symbol id="icon-about-3" viewBox="0 0 35 32">
+<path fill="none" stroke="#4074f8" style="stroke: var(--color1, #4074f8)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4" d="M3.2 3.2v18.4h3.65l1.95 5.6 5.6-5.6h17.207v-18.4h-28.407z"></path>
+</symbol>
+<symbol id="icon-about-2" viewBox="0 0 50 32">
+<path fill="none" stroke="#4074f8" style="stroke: var(--color1, #4074f8)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="4.4444" d="M35.119 28.444h-31.563v-24.889h17.934l2.869 5.62h10.76v3.211M35.119 28.444l9.325-16.057h-9.325M35.119 28.444v-16.057"></path>
+</symbol>
+<symbol id="icon-about-1" viewBox="0 0 27 32">
+<path fill="none" stroke="#4074f8" style="stroke: var(--color1, #4074f8)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3.8095" d="M3.048 11.997v16.956h6.737l3.93-3.048 3.93 3.048h6.737v-16.956l-10.667-8.949-10.667 8.949z"></path>
+</symbol>
 
 </defs>
 </svg>
