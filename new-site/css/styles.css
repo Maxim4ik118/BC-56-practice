@@ -53,3 +53,16 @@ body {
   padding: 0 15px;
   margin: 0 auto;
 }
+
+.header-socials-link {
+  color: var(--primary-color);
+}
+
+.header-socials-icon {
+  fill: currentColor;
+}
+
+.header-socials-link:hover,
+.header-socials-link:focus {
+  color: #6188FF;
+}
