@@ -76,6 +76,7 @@ body {
   color: var(--grey-color-400);
 
   text-shadow: 0px 0px 5px #e6e6e6;
+  transition: color 1000ms ease-in;
 }
 .nav-list-link:hover,
 .nav-list-link:focus {
@@ -83,6 +84,7 @@ body {
 }
 .header-socials-link {
   color: var(--primary-color);
+  transition: color 1000ms cubic-bezier(0.29, 1.01, 1, -0.68);
 }
 
 .header-socials-icon {
@@ -98,17 +100,18 @@ body {
   display: flex;
   color: var(--grey-color-100);
   border: 1px solid transparent;
+  transition: color 1000ms ease-in-out, border 1500ms ease-in;
 }
 
 .partners-icon {
   display: flex;
   fill: currentColor;
 }
-
 .partners-link:hover,
 .partners-link:focus {
   color: var(--accent-color);
   border: 1px solid var(--accent-color);
+  outline: none;
 }
 
 .button {
