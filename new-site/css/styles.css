@@ -70,6 +70,68 @@ body {
   color: var(--secondary-color);
 }
 
+/* -----------------------------Header------------------------- */
+.footer {
+  padding-top: 93px;
+  padding-bottom: 93px;
+}
+
+.footer > .container {
+  display: flex;
+  align-items: center;
+}
+
+.footer > .container:last-child {
+  margin-top: 28px;
+}
+
+.nav-list-text {
+  margin-left: 99px;
+}
+
+.logo {
+  width: 26px;
+  height: 26px;
+  background-color: #5e81fe;
+  border-radius: 100%;
+  margin-right: 73px;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+}
+
+.header-socials-list {
+  display: flex;
+  align-items: center;
+  gap: 35px;
+  margin-right: 44px;
+}
+
+.header-cta-btn {
+  cursor: pointer;
+  border: none;
+  padding: 13px 15px;
+  color: #3a79ff;
+  background-color: #d2e1ff;
+  border-radius: 2px;
+  transition: color 350ms ease-in, background-color 350ms ease-out;
+}
+
+.header-cta-btn:hover,
+.header-cta-btn:focus {
+  color: var(--white-color);
+  background-color: var(--accent-color);
+}
+
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 42px;
+}
+
 .nav-list-link {
   font-weight: var(--fw-medium);
   font-size: 12px;
@@ -80,7 +142,7 @@ body {
   color: var(--grey-color-400);
 
   text-shadow: 0px 0px 5px #e6e6e6;
-  transition: color 1000ms ease-in;
+  transition: color 300ms ease-in;
 }
 .nav-list-link:hover,
 .nav-list-link:focus {
@@ -88,7 +150,7 @@ body {
 }
 .header-socials-link {
   color: var(--primary-color);
-  transition: color 1000ms cubic-bezier(0.29, 1.01, 1, -0.68);
+  transition: color 300ms cubic-bezier(0.29, 1.01, 1, -0.68);
 }
 
 .header-socials-icon {
@@ -100,6 +162,20 @@ body {
   color: var(--accent-color);
 }
 
+.nav-list-copyright {
+  margin-left: 99px;
+  font-family: var(--quicksand);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.25;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: capitalize;
+  color: #aeb8d0;
+}
+/* ---------------------------------------- */
 .partners-link {
   display: flex;
   color: var(--grey-color-100);
@@ -337,4 +413,47 @@ body {
   font-family: var(--quicksand);
   display: flex;
   justify-content: center;
+}
+
+/* ---------------------------Section 10--------------------------- */
+.section-ten {
+  padding-top: 118px;
+  padding-bottom: 118px;
+}
+
+.section-ten-content {
+  max-width: 887px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.section-ten-title {
+  font-family: var(--quicksand);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.2;
+  margin-bottom: 18px;
+  color: var(--secondary-color);
+}
+
+.section-ten-l {
+  margin-right: auto;
+  max-width: 330px;
+}
+
+.section-ten-text {
+  font-size: 14px;
+  line-height: 27px;
+  letter-spacing: 0.03em;
+  color: #8d96bd;
+}
+.section-ten-r {
+}
+.section-ten-btn {
+  padding: 21px 62px;
+  color: var(--white-color);
+  background-color: var(--blue-color);
+  box-shadow: 0px 5px 15px rgba(116, 104, 255, 0.2);
+  border-radius: 5px;
 }
