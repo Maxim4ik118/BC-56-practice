@@ -73,7 +73,9 @@
             </a>
           </li>
         </ul>
-        <a href="" class="header-cta-btn">Get started</a>
+        <button data-open-modal type="button" class="header-cta-btn">
+          Get started
+        </button>
       </div>
     </header>
     <main>
@@ -338,5 +340,24 @@
         <p class="nav-list-copyright">Copyright &#169; 2018 by Random site</p>
       </div>
     </footer>
+
+    <!-- Modal window -->
+    <div class="backdrop" data-backdrop>
+      <div class="modal">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
+          aliquid dolorum vel tempore eius ipsum, earum minus ad voluptas
+          dignissimos porro molestiae non quasi! Earum sequi quaerat commodi
+          velit dolor perspiciatis! Ipsam enim quo quaerat inventore libero
+          doloribus rem ea amet ad, rerum soluta repudiandae tenetur consectetur
+          magni dolore laborum?
+        </p>
+        <button type="button" data-close-modal class="modal-close-btn">
+          &times;
+        </button>
+      </div>
+    </div>
+
+    <script src="./js/modal.js"></script>
   </body>
 </html>
