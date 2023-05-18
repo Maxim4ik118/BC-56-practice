@@ -513,3 +513,43 @@ body {
 .cross-icon {
   fill: currentColor;
 }
+.form {
+}
+.form-group {
+  display: block;
+}
+.form-group-text {
+  display: block;
+}
+.input-container {
+  position: relative;
+}
+.group-input {
+  display: block;
+  width: 100%;
+  padding: 11px;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+
+  border-radius: 4px;
+  padding-left: 37px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  outline: none;
+  transition: border 300ms;
+}
+.group-input:focus {
+  border: 1px solid #4d5ae5;
+}
+.group-input:focus + .form-group-icon {
+  fill: #4d5ae5;
+}
+
+.form-group-icon {
+  position: absolute;
+  left: 16px;
+  /* top: 17px; */
+  top: 50%;
+  transform: translateY(-50%);
+  transition: fill 300ms;
+}
