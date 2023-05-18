@@ -498,4 +498,18 @@ body {
   position: absolute;
   top: 15px;
   right: 15px;
+  background: #e7e9fc;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  color: #2e2f42;
+  width: 24px;
+  height: 24px;
+  transition: color 300ms ease-in-out;
+}
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  color: red;
+}
+
+.cross-icon {
+  fill: currentColor;
 }
