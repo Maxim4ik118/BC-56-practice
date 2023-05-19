@@ -34,11 +34,10 @@ img {
 }
 
 .container {
-  padding-left: 20px;
-  padding-right: 20px;
-  width: 1380px;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 100%;
   margin: 0 auto;
-  /* outline: 1px crimson solid; */
 }
 
 .c-list {
@@ -57,7 +56,8 @@ img {
   align-items: center;
 }
 
-.header {}
+.header {
+}
 
 .logo {
   font-size: 36px;
@@ -66,7 +66,8 @@ img {
   margin-right: 236px;
 }
 
-.header-logo {}
+.header-logo {
+}
 
 .accent {
   color: #939393;
@@ -81,7 +82,8 @@ img {
   gap: 50px;
 }
 
-.navigation-item {}
+.navigation-item {
+}
 
 .navigation-link {
   font-weight: var(--fw-medium);
@@ -108,7 +110,7 @@ img {
 }
 
 /* Hero */
-.hero>.container {
+.hero > .container {
   display: flex;
   justify-content: space-between;
 }
@@ -122,7 +124,8 @@ img {
   max-width: 540px;
 }
 
-.hero-block-right {}
+.hero-block-right {
+}
 
 .hero-title {
   font-weight: var(--fw-semibold);
@@ -162,11 +165,13 @@ img {
   padding-bottom: 89px;
 }
 
-.skills-title {
+.skills-title,
+.skills-two-title {
   font-weight: var(--fw-semibold);
-  font-size: 48px;
+  font-size: 24px;
   line-height: 1.5;
   text-align: center;
+  margin-bottom: 32px;
 
   color: var(--primary-color);
 }
@@ -176,38 +181,52 @@ img {
   flex-wrap: wrap;
   gap: 30px;
 }
+.skills-two-list {
+  display: flex;
+  flex-direction: column;
+  gap: 21px;
+}
 
-.skills-item {
-  width: calc((100% - 60px) / 3);
+.skills-item,
+.skills-two-item {
   background-color: #f5f5f5;
   border-radius: 10px;
-  padding: 32px 18px;
+  padding: 38px 16px;
 }
 
-.skills-item-title {
+.skills-item-title,
+.skills-two-item-title {
   font-weight: var(--fw-semibold);
-  font-size: 30px;
+  font-size: 18px;
   line-height: 1.5;
-
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  margin-top: 30px;
 }
 
-.skills-item-text {
-  font-size: 16px;
-  line-height: 1.5;
+.skills-two-img,
+.skills-img {
+  width: 100%;
+}
 
+.skills-item-text,
+.skills-two-item-text {
+  font-size: 13px;
+  line-height: calc(20 / 13);
+  color: #8f95a5;
   margin-bottom: 30px;
 }
 
-.skills-item-link {
-  font-weight: var(--fw-medium);
-  font-size: 18px;
-  line-height: 1.5;
+.skills-item-link,
+.skills-two-item-link {
   color: var(--white-color);
   background: var(--bgc-btn-dark);
   border-radius: 10px;
   display: inline-block;
-  padding: 15px 57px;
+  padding: 14px 43px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #ffffff;
 }
 
 /*--------ABOUT------*/
@@ -216,7 +235,7 @@ img {
   padding-bottom: 90px;
 }
 
-.about>.container {
+.about > .container {
   display: flex;
 }
 
@@ -344,18 +363,17 @@ img {
   color: #546269;
 }
 
-
-
 /*  -------------Contact---------- */
 .contact {
   padding-top: 90px;
 }
 
-.contact>.container {
+.contact > .container {
   display: flex;
 }
 
-.contact-left {}
+.contact-left {
+}
 
 .contact-right {
   max-width: 654px;
@@ -363,7 +381,8 @@ img {
   margin-left: auto;
 }
 
-.contact-img {}
+.contact-img {
+}
 
 .contact-title,
 .contact-text {
@@ -387,18 +406,18 @@ img {
 
 /* ---------Footer-------- */
 
-.footer>.container {
+.footer > .container {
   display: flex;
   align-items: center;
-  border-top: 1px solid #C4C4C4;
-  ;
+  border-top: 1px solid #c4c4c4;
 }
 
 .footer {
   padding-bottom: 55;
 }
 
-.footer-logo {}
+.footer-logo {
+}
 
 .navigation-list {
   margin-left: auto;
@@ -408,6 +427,48 @@ img {
   color: var(--secondary-color);
 }
 
-.navigation-item {}
+.navigation-item {
+}
 
-.navigation-link {}
+.navigation-link {
+}
+
+@media screen and (min-width: 575px) {
+  .container {
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+
+  .skills-two-title {
+    font-size: 30px;
+  }
+  .skills-two-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px;
+  }
+  .skills-two-item {
+    max-width: calc((100% - 32px) / 2);
+    display: flex;
+    flex-direction: column;
+    min-height: 534px;
+    align-items: flex-start;
+  }
+  .skills-two-item-text {
+    margin-bottom: auto;
+    padding-bottom: 25px;
+  }
+  .skills-two-item-link {
+    padding: 14px 54px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 992px) {
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1378px;
+  }
+}
