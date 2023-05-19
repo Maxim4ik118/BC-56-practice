@@ -464,6 +464,32 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .skills-two {
+    padding-bottom: 52px;
+  }
+  .skills-two-title {
+    margin-bottom: 42px;
+  }
+  .skills-two-item {
+    max-width: calc((100% - 20px) / 3);
+  }
+  .skills-two-list {
+    gap: 10px;
+  }
+  .skills-two-img {
+    max-width: 214px;
+    display: flex;
+    margin: 0 auto;
+  }
+  .skills-two-item-title {
+    font-size: 20px;
+  }
+  .skills-two-item-text {
+    font-size: 13px;
+  }
+  .skills-two-item-link {
+    font-size: 16px;
+  }
 }
 @media screen and (min-width: 992px) {
 }
