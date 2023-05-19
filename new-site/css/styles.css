@@ -478,8 +478,9 @@ body {
 
 .modal {
   min-height: 300px;
-  min-width: 400px;
+  /* min-width: 400px; */
   max-width: 600px;
+  width: 100vw;
   padding: 30px;
   background-color: var(--white-color);
   position: absolute;
@@ -552,4 +553,50 @@ body {
   top: 50%;
   transform: translateY(-50%);
   transition: fill 300ms;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tick-wrap {
+  display: flex;
+  width: 16px;
+  height: 16px;
+  background-color: transparent;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+  transition: background-color 300ms linear, border 300ms linear;
+}
+.checkbox-tick {
+  fill: #fff;
+  opacity: 0;
+  transition: opacity 300ms ease;
+}
+.checkbox:checked + .tick-wrap {
+  background-color: #4074f8;
+  border: 1px solid #4074f8;
+}
+
+.checkbox:checked + .tick-wrap > .checkbox-tick {
+  opacity: 1;
+}
+.checkbox:focus + .tick-wrap {
+  outline: 1px solid #4074f8;
 }
