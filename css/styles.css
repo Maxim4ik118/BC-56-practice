@@ -497,4 +497,23 @@ img {
   .container {
     max-width: 1378px;
   }
+  .skills-two-item {
+    max-width: calc((100% - 60px) / 3);
+  }
+  .skills-two-list {
+    gap: 30px;
+  }
+  .skills-two-item-title {
+    font-size: 30px;
+  }
+  .skills-two-item-text{
+    font-size: 16px;
+
+  }
+  .skills-two-item-link {
+    font-size: 20px;
+  }
+.skills-two{
+  padding-bottom: 180px;
+}
 }
