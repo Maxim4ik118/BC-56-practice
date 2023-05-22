@@ -60,10 +60,10 @@ img {
 }
 
 .logo {
-  font-size: 36px;
+  padding: 29px 0;
+  font-size: 24px;
   line-height: 1.5;
   color: var(--primary-color);
-  margin-right: 236px;
 }
 
 .header-logo {
@@ -73,13 +73,12 @@ img {
   color: #939393;
 }
 
-/* .navigation {
-  display: flex;
-} */
+.navigation {
+  display: none;
+}
 
 .navigation-list {
   display: flex;
-  gap: 50px;
 }
 
 .navigation-item {
@@ -87,7 +86,6 @@ img {
 
 .navigation-link {
   font-weight: var(--fw-medium);
-  font-size: 20px;
   line-height: 1.5;
   padding-top: 55px;
   padding-bottom: 55px;
@@ -96,6 +94,8 @@ img {
 }
 
 .btn-navigation {
+  display: none;
+
   padding: 20px 112px;
   margin-left: auto;
   font-size: 20px;
@@ -107,6 +107,60 @@ img {
   background-color: transparent;
 
   color: var(--primary-color);
+}
+
+/* Mobile menu */
+
+.burger-btn-open {
+  display: block;
+  margin-left: auto;
+  border: none;
+  background-color: transparent;
+}
+.mobile-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  padding: 24px 15px;
+  transform: translateX(-110%);
+  transition: transform 250ms linear;
+  background-color: var(--white-color);
+}
+.mobile-menu.is-open {
+  transform: translateX(0);
+}
+.burger-btn-close {
+  position: absolute;
+  top: 24px;
+  right: 15px;
+  border: none;
+  background-color: transparent;
+}
+.mobile-nav {
+  display: block;
+}
+.mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 20px;
+  margin-bottom: 69px;
+  padding-top: 30px;
+  border-top: 1px solid #c4c4c4;
+}
+.mobile-nav-link {
+  font-size: 22px;
+  padding-top: 42px;
+  padding-bottom: 0;
+}
+.burger-nav-btn {
+  display: flex;
+  justify-content: center;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
 }
 
 /* Hero */
@@ -365,23 +419,33 @@ img {
 
 /*  -------------Contact---------- */
 .contact {
-  padding-top: 90px;
+  margin-bottom: 69px;
+  padding-top: 98px;
 }
 
 .contact > .container {
-  display: flex;
+  display: block;
 }
 
 .contact-left {
 }
-
+.mobile-title {
+  margin-bottom: 55px;
+  display: block;
+}
 .contact-right {
   max-width: 654px;
   width: 100%;
   margin-left: auto;
 }
-
+.main-contact-title {
+  display: none;
+}
 .contact-img {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
 }
 
 .contact-title,
@@ -391,17 +455,41 @@ img {
 
 .contact-title {
   font-weight: var(--fw-semibold);
-  font-size: 48px;
+  font-size: 24px;
   color: #000000;
-
+  text-align: center;
   margin-top: 0;
 }
 
 .contact-text {
-  font-size: 20px;
+  font-size: 14px;
   color: var(--secondary-color);
+  text-align: center;
+  margin-top: 38px;
+  margin-bottom: 31px;
+}
 
-  margin-bottom: 0;
+.form-input {
+  padding: 20px 20px 20px 40px;
+  width: 100%;
+  font-weight: var(--fw-regular);
+  font-size: 12px;
+  line-height: 1.5;
+  color: #8f95a5;
+  border: 1px solid #8f95a5;
+  border-radius: 5px;
+  margin-bottom: 17px;
+}
+.form-btn {
+  display: block;
+  padding: 20px 0;
+  width: 100%;
+  font-weight: var(--fw-medium);
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--white-color);
+  background-color: #263238;
+  border-radius: 5px;
 }
 
 /* ---------Footer-------- */
@@ -438,7 +526,22 @@ img {
     padding-left: 32px;
     padding-right: 32px;
   }
-
+  .logo {
+    padding: 39px 0;
+    font-size: 30px;
+  }
+  .mobile-nav-list {
+    margin-top: 53px;
+    margin-bottom: 80px;
+  }
+  .mobile-nav-link {
+    font-size: 24px;
+  }
+  .burger-nav-btn {
+    font-size: 22px;
+    max-width: 330px;
+    margin-left: 0;
+  }
   .skills-two-title {
     font-size: 30px;
   }
@@ -461,9 +564,58 @@ img {
   .skills-two-item-link {
     padding: 14px 54px;
   }
+  .contact-title {
+    font-size: 30px;
+    margin-bottom: 112px;
+  }
+  .contact-text {
+    font-size: 16px;
+    margin-top: 34px;
+    margin-bottom: 60px;
+  }
+  .form {
+    display: flex;
+    gap: 10px;
+  }
+
+  .form-btn {
+    font-size: 16px;
+    line-height: 1.2;
+    max-width: 193px;
+    padding-top: 21px;
+    padding-bottom: 15px;
+  }
+  .form-label {
+    width: 100%;
+  }
+
+  .form-input {
+    font-size: 13px;
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .mobile-menu {
+    max-width: 429px;
+    padding: 39px;
+  }
+  .burger-btn-close {
+    top: 45px;
+  }
+  .mobile-nav-link {
+    font-size: 22px;
+  }
+  .mobile-nav-list {
+    margin-top: 20px;
+  }
+  .burger-nav-btn {
+    font-size: 18px;
+    max-width: 210px;
+    margin-left: 0;
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
   .skills-two {
     padding-bottom: 52px;
   }
@@ -490,13 +642,98 @@ img {
   .skills-two-item-link {
     font-size: 16px;
   }
+  .mobile-title {
+    display: none;
+  }
+  .main-contact-title {
+    display: block;
+  }
+  .contact > .contact-thumb {
+    display: flex;
+    gap: 36px;
+  }
+  .main-contact-title {
+    margin-bottom: 25px;
+  }
+  .contact-img {
+    margin: 0;
+  }
+  .contact-text {
+    font-size: 14px;
+    text-align: left;
+  }
+  .form-btn {
+    font-size: 12px;
+    line-height: 1.2;
+    max-width: 145px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .form-label {
+    width: 100%;
+  }
+
+  .form-input {
+    font-size: 12px;
+    margin-bottom: 0;
+    padding: 16px 24px;
+  }
 }
 @media screen and (min-width: 992px) {
+  .navigation {
+    display: block;
+  }
+  .navigation-list {
+    gap: 25px;
+  }
+
+  .navigation-link {
+    font-size: 16px;
+  }
+  .btn-navigation {
+    display: block;
+    font-size: 18px;
+    padding: 12px 40px;
+  }
+  .logo {
+    margin-right: 167px;
+  }
+
+  .burger-btn-open {
+    display: none;
+  }
+  .contact-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+  }
+  .contact-text {
+    font-size: 16px;
+  }
+  .form {
+    max-width: 530px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .container {
     max-width: 1378px;
   }
+  .logo {
+    padding: 63px 0;
+    font-size: 36px;
+    margin-right: 236px;
+  }
+
+  .navigation-list {
+    gap: 50px;
+  }
+  .navigation-link {
+    font-size: 20px;
+  }
+  .btn-navigation {
+    padding: 20px 112px;
+    font-size: 20px;
+  }
+
   .skills-two-item {
     max-width: calc((100% - 60px) / 3);
   }
@@ -506,14 +743,40 @@ img {
   .skills-two-item-title {
     font-size: 30px;
   }
-  .skills-two-item-text{
+  .skills-two-item-text {
     font-size: 16px;
-
   }
   .skills-two-item-link {
     font-size: 20px;
   }
-.skills-two{
-  padding-bottom: 180px;
-}
+  .skills-two {
+    padding-bottom: 180px;
+  }
+  .contact {
+    padding-top: 90px;
+  }
+  .contact > .container {
+    display: flex;
+  }
+  .contact-title {
+    font-size: 48px;
+  }
+  .contact-text {
+    font-size: 20px;
+  }
+  .form {
+    max-width: 100%;
+  }
+  .form-btn {
+    font-size: 20px;
+
+    max-width: 312px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .form-input {
+    font-size: 16px;
+
+    padding: 20px 20px;
+  }
 }

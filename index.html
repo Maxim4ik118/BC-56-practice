@@ -23,11 +23,16 @@
   </head>
 
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header-container">
         <a href="index.html" class="header-logo logo c-link"
           >Brit<span class="accent">lex</span></a
         >
+        <button class="burger-btn-open js-open-menu" type="button">
+          <svg class="burger-icon" width="34" height="19">
+            <use href="./image/sprite.svg#icon-burger"></use>
+          </svg>
+        </button>
         <nav class="navigation">
           <ul class="navigation-list c-list">
             <li class="navigation-item">
@@ -48,8 +53,53 @@
           </ul>
         </nav>
         <button type="button" class="btn-navigation">Let’s Talk</button>
+        <!-- Mobile menu -->
+        <div class="mobile-menu js-menu-container">
+          <a href="index.html" class="burger-logo logo c-link"
+            >Brit<span class="accent">lex</span></a
+          >
+          <button class="burger-btn-close js-close-menu" type="button">
+            <svg class="burger-icon-close" width="34" height="34">
+              <use href="./image/sprite.svg#icon-close"></use>
+            </svg>
+          </button>
+          <nav class="navigation mobile-nav">
+            <ul class="navigation-list c-list mobile-nav-list">
+              <li class="navigation-item">
+                <a
+                  href="index.html"
+                  class="navigation-link c-link mobile-nav-link"
+                  >Home</a
+                >
+              </li>
+              <li class="navigation-item">
+                <a href="#" class="navigation-link c-link mobile-nav-link"
+                  >Skills</a
+                >
+              </li>
+              <li class="navigation-item">
+                <a href="#" class="navigation-link c-link mobile-nav-link"
+                  >About Us</a
+                >
+              </li>
+              <li class="navigation-item">
+                <a href="#" class="navigation-link c-link mobile-nav-link"
+                  >Pricing</a
+                >
+              </li>
+              <li class="navigation-item">
+                <a href="#" class="navigation-link c-link mobile-nav-link"
+                  >Contacts</a
+                >
+              </li>
+            </ul>
+          </nav>
+          <button type="button" class="btn-navigation burger-nav-btn">
+            Let’s Talk
+          </button>
+        </div>
       </div>
-    </header> -->
+    </header>
     <main>
       <!-- <section class="hero">
         <div class="container">
@@ -153,7 +203,9 @@
               <p class="skills-two-item-text text">
                 Improve your English skills and confidence. Live classes and
                 interactive lessons online. 20% extra free for a limited time
-                only <br/> <br/> Learn English online and improve your skills through our
+                only <br />
+                <br />
+                Learn English online and improve your skills through our
                 high-quality courses and resources – all designed for adult
                 language learners.
               </p>
@@ -304,9 +356,12 @@
           </ul>
         </div>
       </section>
+      -->
+
       <section class="contact">
-        <div class="container">
+        <div class="container contact-thumb">
           <div class="contact-left">
+            <h2 class="contact-title mobile-title">Contact Us</h2>
             <img
               class="contact-img"
               src="./image/contact.png"
@@ -316,15 +371,24 @@
             />
           </div>
           <div class="contact-right">
-            <h2 class="contact-title mb-60">Contact Us</h2>
+            <h2 class="contact-title mb-60 main-contact-title">Contact Us</h2>
             <p class="contact-text">
               Discover your current English level by taking our free online
               English test. Sign up to our newsletter for learning tips and free
               resources
             </p>
+            <form class="form">
+              <label class="form-label"
+                ><input
+                  type="email"
+                  placeholder="Enter Your E-mail"
+                  class="form-input"
+              /></label>
+              <button type="submit" class="form-btn">Subscribe</button>
+            </form>
           </div>
         </div>
-      </section> -->
+      </section>
     </main>
     <!-- <footer class="footer">
       <div class="container">
@@ -344,5 +408,6 @@
         </ul>
       </div>
     </footer> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
